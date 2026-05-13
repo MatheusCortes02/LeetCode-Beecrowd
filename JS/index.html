@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+        }
+        body.escuro{
+            background-color: black;
+            color: white;
+        }
+
+        button{
+            display: flex;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(35, 35, 209);
+            color: white;
+            box-shadow: 0px 0px 20px rgba(1, 253, 64, 0.5);
+            border: none;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: rgb(35, 35, 255);
+            cursor: pointer;
+        }
+
+        .escuro button{
+            background-color: rgb(223, 131, 10);
+            color: white;
+            box-shadow: 0px 0px 20px rgba(1, 253, 64, 0.5);
+        }
+
+            .escuro button:hover{
+                background-color: rgb(255, 149, 0);
+                cursor: pointer;
+            }
+
+  /* O fundo (escondido por padrão) */
+.modal {
+  display: none; 
+  position: fixed;
+  inset: 0; /* ocupa a tela toda */
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* A caixinha branca */
+.modal-body {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+    </style>
+</head>
+<body>
+    <h1 id="resultado" style="text-align: center;"></h1>
+
+    <button id="escuro" onclick="trocar()">Modo</button>
+
+    
+    <button onclick="abrir()">Abrir Pop-up</button>
+
+<div id="meuModal" class="modal">
+  <div class="modal-body">
+    <p>Este é um pop-up simples!</p>
+    <button onclick="fechar()">Fechar</button>
+  </div>
+</div>
+
+    <script src="treino1.js"></script>
+</body>
+</html>

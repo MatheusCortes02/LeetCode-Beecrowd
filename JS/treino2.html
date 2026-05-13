@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+    <style>
+        button{
+            display: flex;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(35, 35, 209);
+            color: white;
+            box-shadow: 0px 0px 20px rgba(1, 253, 64, 0.5);
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo">Exercício 1</h1>
+
+    <button id="cor" onclick="trocar()">
+        Trocar Cor
+    </button>
+
+    <script>
+
+        function trocar(){
+
+            const botao = document.getElementById("cor");
+            const titulo = document.getElementById("titulo");
+
+            botao.style.backgroundColor = "red";
+
+            titulo.style.color = "green";
+
+            titulo.innerText = "Cor alterada!";
+        }
+
+    </script>
+
+</body>
+</html>
